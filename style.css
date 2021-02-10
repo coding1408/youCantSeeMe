@@ -1,0 +1,47 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: arial;
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    cursor: pointer;
+    position: fixed;
+    transition: background .5s ease-in-out, top 0.25s linear, left 0.25s linear;
+}
+
+#counter{
+    font-size: 2rem;
+    position: fixed;
+    top: 10px;
+    z-index: 2;
+}
+
+#container{
+    position: fixed;
+    bottom: 10px;
+   
+}
+
+.toast{
+   
+    color: white;
+    font-family: inherit;
+    padding :2rem;
+    border-radius: 5px;
+    margin: 1rem;
+    transform: translateY(0);
+    animation: rise 7s linear forwards
+}
+
+@keyframes rise{
+    to{
+        transform: translateY(-100vh) rotate(1800deg);
+    }
+}
