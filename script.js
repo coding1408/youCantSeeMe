@@ -63,7 +63,7 @@ function updateCountdown(){
 
     if ( timeChecker != (time) ){
         createNote2(); /* ADD JAMAL HERE */
-        time = 0
+        time = 60;
         timeChecker=time;
         time=timeChecker;
         
