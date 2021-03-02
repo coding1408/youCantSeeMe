@@ -68,7 +68,7 @@ function updateCountdown(){
         time=timeChecker;
         
         highScore = -20;
-        score = -50;
+        count = -50;
         
     }
 
