@@ -17,10 +17,11 @@ body{
 }
 
 #counter{
-    font-size: 2rem;
+    font-size: 3rem;
     position: fixed;
     top: 10px;
     z-index: 2;
+    
 }
 
 #container{
@@ -37,11 +38,52 @@ body{
     border-radius: 5px;
     margin: 1rem;
     transform: translateY(0);
-    animation: rise 7s linear forwards
+    animation: rise 4s linear forwards
 }
 
 @keyframes rise{
     to{
         transform: translateY(-100vh) rotate(1800deg);
     }
+}
+
+#timer {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 44px;
+}
+
+#gameover{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(36, 87, 153, 0.329);
+    display:none;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+#gameover.active{
+    display: flex;
+}
+
+#gameover button{
+    background-color: rgb(127, 143, 235);
+    color:rgb(0, 0, 0);
+    font-size:28px;
+    padding: 1rem;
+    border-radius:6px;
+    border:none;
+    text-shadow: 2px 2px 2px rgb(165, 176, 243);
+}
+
+#highscore{
+    font-size: 70px;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    padding-top: 3rem;
 }
