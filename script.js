@@ -58,11 +58,15 @@ function updateCountdown(){
 
     }
 
+    console.log(timeChecker);
+        console.log(time);
+
     if ( timeChecker != (time) ){
         createNote2(); /* ADD JAMAL HERE */
         time = 0
         timeChecker=time;
         time=timeChecker;
+        
         highScore = -20;
         
     }
