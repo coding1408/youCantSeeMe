@@ -35,6 +35,7 @@ function updateCountdown(){
         gameover.classList.add("active");
         countdownEl.innerText = "0:00";
         let gamehighScore = count;
+        
         if (gamehighScore > highScore){
              highScore = gamehighScore
             }
@@ -47,6 +48,8 @@ function updateCountdown(){
             count = 0;
             counter.innerText = count;
             box.style.background = bgChagner(1);
+            timeChecker = time;
+            countChecker = count;
            
             
         })
@@ -58,8 +61,8 @@ function updateCountdown(){
 
     }
 
-    console.log(timeChecker);
-        console.log(time);
+   /*console.log("timecheck:" + timeChecker);
+    console.log("time:"+time);*/ /*IMPORTANT FOR DEBUGGING*/
 
     if ( timeChecker != (time) ){
         createNote2(); /* ADD JAMAL HERE */
@@ -77,8 +80,8 @@ function updateCountdown(){
 
 
     box.addEventListener("click", () =>{
-        console.log(countChecker)
-        console.log(count)
+     /*   console.log("countchecker: " +countChecker)
+        console.log("count" +count)*//*IMPORTASNT FOR DEBUGGING */
         if (countChecker != count){
             alert("you are a bad person")
             count = -20;
